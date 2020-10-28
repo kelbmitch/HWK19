@@ -1,0 +1,80 @@
+html,body,div{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+p{
+    background-color: none;
+    color: salmon;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+}
+
+img{
+    border-radius: 8px;
+}
+.container{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+      
+.image{
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+/* i wanted to align the text to the center of the image, i had dont alight-items:center; ..but that doesnt seem to be working */
+    .overlay{
+        align-items: center;
+        position: absolute; 
+        bottom: 50px; 
+        color:black;
+        width: 100%;
+        transition: .5s ease;
+        opacity:0;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container:hover .overlay{
+          opacity: 100%;
+    }
+      
+    .middle{
+        transition: .5s ease;
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .container:hover .image {
+        opacity: 0.3;
+    }
+  
+    .container:hover .middle {
+        opacity: 1;
+    }
+  
+    .text {
+        align-items: center;
+        background-color: #6D597A;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
